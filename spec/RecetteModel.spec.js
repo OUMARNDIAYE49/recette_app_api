@@ -58,7 +58,7 @@ describe('Recette Model', () => {
     expect(recette).toEqual({
       id: createdRecette.insertId,
       titre: uniqueTitle,
-      ingredient: 'Ingrédients de Test',
+      ingredients: 'Ingrédients de Test',
       type: 'plat',
     });
   });

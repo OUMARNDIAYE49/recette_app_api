@@ -85,32 +85,44 @@ Exécutez la commande suivante pour démarrer l'application, :
    {
         "id": 1,
         "titre": "Tarte aux pommes",
-        "ingredient": "Pommes, Pte feuillete, Sucre, Beurre, Cannelle",
-        "type": "Dessert"
+        "ingredients": "Pommes, Pte feuillete, Sucre, Beurre, Cannelle",
+        "type": "dessert"
     },
     {
         "id": 2,
         "titre": "Spaghetti Carbonara",
-        "ingredient": "Spaghetti, Lardons, ufs, Parmesan, Crme frache",
-        "type": "Plat principal"
+        "ingredients": "Spaghetti, Lardons, ufs, Parmesan, Crme frache",
+        "type": "plat"
     },
     {
         "id": 3,
         "titre": "Salade Csar",
-        "ingredient": "Salade romaine, Poulet, Crotons, Parmesan, Sauce Csar",
-        "type": "Entre"
+        "ingredients": "Salade romaine, Poulet, Crotons, Parmesan, Sauce Csar",
+        "type": "entre"
     },
     {
         "id": 4,
         "titre": "Soupe  loignon",
-        "ingredient": "Oignons, Bouillon de buf, Pain, Fromage rp",
-        "type": "Entre"
+        "ingredients": "Oignons, Bouillon de buf, Pain, Fromage rp",
+        "type": "entre"
     },
     {
         "id": 5,
         "titre": "Brownie au chocolat",
-        "ingredient": "Chocolat, Beurre, Sucre, ufs, Farine",
-        "type": "Dessert"
+        "ingredients": "Chocolat, Beurre, Sucre, ufs, Farine",
+        "type": "dessert"
+    },
+    {
+        "id": 6,
+        "titre": "Quiche Lorraine",
+        "ingredients": "Pte brise, Lardons, Crme frache, Oeufs, Fromage",
+        "type": "plat"
+    },
+    {
+        "id": 7,
+        "titre": "Bruschetta",
+        "ingredients": "Pain, Tomates, Basilic, Ail, Huile d'olive",
+        "type": "entre"
     }
   ]
   ```
@@ -127,8 +139,8 @@ Exécutez la commande suivante pour démarrer l'application, :
   {
     "id": 1,
     "titre": "Tarte aux pommes",
-    "ingredient": "Pommes, Pte feuillete, Sucre, Beurre, Cannelle",
-    "type": "Dessert"
+    "ingredients": "Pommes, Pte feuillete, Sucre, Beurre, Cannelle",
+    "type": "dessert"
   }
   ```
 
@@ -142,8 +154,8 @@ Exécutez la commande suivante pour démarrer l'application, :
 
 ```bash
 {
-   "titre": "Tarte aux pommes",
-   "ingredient": "Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle",
+   "titre": "Tarte aux pome",
+   "ingredients": "Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle",
    "type": "dessert"
 },
 
@@ -169,7 +181,7 @@ Exécutez la commande suivante pour démarrer l'application, :
   ```bash
   {
     "titre": "Salade Fruit",
-    "ingredient": "Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle",
+    "ingredients": "Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle",
     "type": "dessert"
   }
   ```

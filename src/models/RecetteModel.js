@@ -17,18 +17,18 @@ export const getRecetteByTitle = async titre => {
   return rows.length > 0 ? rows[0] : null;
 };
 
-export const createRecette = async (titre, ingredient, type) => {
+export const createRecette = async (titre, ingredients, type) => {
   const [result] = await db.query(
-    'INSERT INTO recettes (titre, ingredient, type) VALUES (?, ?, ?)',
-    [titre, ingredient, type]
+    'INSERT INTO recettes (titre, ingredients, type) VALUES (?, ?, ?)',
+    [titre, ingredients, type]
   );
   return result;
 };
 
-export const updateRecette = async (id, titre, ingredient, type) => {
+export const updateRecette = async (id, titre, ingredients, type) => {
   const [result] = await db.query(
-    'UPDATE recettes SET titre = ?, ingredient = ?, type = ? WHERE id = ?',
-    [titre, ingredient, type, id]
+    'UPDATE recettes SET titre = ?, ingredients = ?, type = ? WHERE id = ?',
+    [titre, ingredients, type, id]
   );
   return result;
 };

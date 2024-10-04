@@ -66,7 +66,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "    {\r\n       \r\n        \"titre\": \"Tarte aux pommes\",\r\n        \"ingredient\": \"Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle\",\r\n        \"type\": \"dessert\"\r\n    }",
+					"raw": "    {\r\n       \r\n        \"titre\": \"Tarte aux pommes\",\r\n        \"ingredients\": \"Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle\",\r\n        \"type\": \"dessert\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -96,7 +96,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "   {    \r\n        \"titre\": \"Salade Fruit\",\r\n        \"ingredient\": \"Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle\",\r\n        \"type\": \"dessert\"\r\n    }",
+					"raw": "   {    \r\n        \"titre\": \"Salade Fruit\",\r\n        \"ingredients\": \"Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle\",\r\n        \"type\": \"dessert\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -134,7 +134,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/api/recipe/34",
+					"raw": "http://localhost:4000/api/recipe/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -143,7 +143,7 @@
 					"path": [
 						"api",
 						"recipe",
-						"34"
+						"5"
 					]
 				}
 			},
