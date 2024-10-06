@@ -28,9 +28,8 @@ CREATE TABLE `recettes` (
   `ingredients` text NOT NULL,
   `type` varchar(50) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `titre` (`titre`),
-  CONSTRAINT `chk_type` CHECK ((`type` in (_cp850'entr�e',_cp850'plat',_cp850'dessert')))
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  UNIQUE KEY `titre` (`titre`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +38,7 @@ CREATE TABLE `recettes` (
 
 LOCK TABLES `recettes` WRITE;
 /*!40000 ALTER TABLE `recettes` DISABLE KEYS */;
-INSERT INTO `recettes` VALUES (1,'Tarte aux pommes','Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle','dessert'),(2,'Spaghetti Carbonara','Spaghetti, Lardons, ?ufs, Parmesan, Crème fraîche','plat'),(3,'Salade de fruits','Pommes, Bananes, Fraises, Kiwi','dessert'),(4,'Soupe à l\'oignon','Oignons, Bouillon de b?uf, Pain, Fromage râpé','entrée'),(5,'Brownie au chocolat','Chocolat, Beurre, Sucre, ?ufs, Farine','dessert'),(6,'Quiche Lorraine','Pâte brisée, Lardons, Crème fraîche, Oeufs, Fromage','plat'),(7,'Bruschetta','Pain, Tomates, Basilic, Ail, Huile d\'olive','entrée');
+INSERT INTO `recettes` VALUES (1,'Tarte aux pommes','Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle','dessert'),(2,'Spaghetti Carbonara','Spaghetti, Lardons, ?ufs, Parmesan, Crème fraîche','plat'),(3,'Salade de fruits','Pommes, Bananes, Fraises, Kiwi','dessert'),(4,'Salade Fruit','Pommes, Pâte feuilletée, Sucre, Beurre, Cannelle','dessert'),(5,'Brownie au chocolat','Chocolat, Beurre, Sucre, ?ufs, Farine','dessert'),(7,'Bruschetta','Pain, Tomates, Basilic, Ail, Huile d\'olive','entrée');
 /*!40000 ALTER TABLE `recettes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-04 10:58:25
+-- Dump completed on 2024-10-06 12:53:55

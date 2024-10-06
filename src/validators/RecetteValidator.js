@@ -7,14 +7,14 @@ export const validateRecette = [
     .notEmpty()
     .withMessage('Le titre est requis.')
     .isLength({ min: 5, max: 100 })
-    .withMessage('Le titre doit contenir au moins 5 caractères.'),
+    .withMessage('Le titre doit contenir au moins 5 caractères et maximum 100 caracteres.'),
 
   body('ingredients')
     .trim()
     .notEmpty()
     .withMessage('Les ingrédients sont requis.')
     .isLength({ min: 10, max: 500 })
-    .withMessage('Les ingrédients doivent contenir au moins 10 caractères.'),
+    .withMessage('Les ingrédients doivent contenir au moins 10 caractères maximum 500 caracteres.'),
 
   body('type')
     .trim()
